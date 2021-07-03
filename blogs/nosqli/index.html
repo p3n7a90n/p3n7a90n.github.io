@@ -12,7 +12,7 @@
     
     <meta http-equiv="Cache-Control" content="no-siteapp" />
 
-    <title>Advanced XSS | p3n7a90n</title>
+    <title>NoSqli | p3n7a90n</title>
 
     <link rel="stylesheet" href="/css/meme.min.82382c86f87cf87b5b53406251018e77569171b25295c38fca025288034c3fce.css"/>
 
@@ -28,11 +28,9 @@
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM&#43;Plex&#43;Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Comfortaa:wght@700&amp;display=swap" /></noscript>
 
     <meta name="author" content="" /><meta name="description" content="Hi there!,
-I had solved Portswigger Labs and had an basic idea on XSS.
-This time, I wanted to learn advanced way of exploiting XSS.
-This blog contains the references for the same.
-Topic - XSS Labs/Challenges   https://xss.pwnfunction.com/
-(Nice challenges by @Pwnfuncton)" />
+This is the fourth topic in this series. You can have a look at other topics also for getting a better idea about the series and the pattern.
+Fourth Topic - NoSql Injection Resources  https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.6-Testing_for_NoSQL_Injection
+(Owasp Ref) https://www.netsparker.com/blog/web-security/what-is-nosql-injection/ (NetSparker Blog) https://geekflare." />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
@@ -51,7 +49,7 @@ Topic - XSS Labs/Challenges   https://xss.pwnfunction.com/
     
 
     
-    <link rel="canonical" href="https://p3n7a90n.github.com/blogs/advancedxss/" />
+    <link rel="canonical" href="https://p3n7a90n.github.com/blogs/nosqli/" />
     
 
     
@@ -129,7 +127,7 @@ Topic - XSS Labs/Challenges   https://xss.pwnfunction.com/
 
         <article class="content post h-entry" data-small-caps="true" data-align="default" data-type="blogs" data-toc-num="true">
 
-            <h1 class="post-title p-name">Advanced XSS</h1>
+            <h1 class="post-title p-name">NoSqli</h1>
 
             
 
@@ -143,7 +141,7 @@ Topic - XSS Labs/Challenges   https://xss.pwnfunction.com/
 <div class="post-meta">
     
         
-        <time datetime="2021-05-22T22:36:19&#43;05:30" class="post-meta-item published dt-published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2021.5.22</time>
+        <time datetime="2021-07-03T09:15:17&#43;05:30" class="post-meta-item published dt-published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2021.7.3</time>
     
     
     
@@ -152,7 +150,7 @@ Topic - XSS Labs/Challenges   https://xss.pwnfunction.com/
         
         
             
-                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/web-security/" class="category-link p-category">Web Security</a>/<a href="/categories/self-learning/" class="category-link p-category">Self Learning</a></span>
+                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/web-security/" class="category-link p-category">Web Security</a>/<a href="/categories/null-web-study-group/" class="category-link p-category">Null-Web-Study-Group</a></span>
             
         
     
@@ -169,65 +167,45 @@ Topic - XSS Labs/Challenges   https://xss.pwnfunction.com/
 
             <div class="post-body e-content">
               <p style="text-indent:0"><span class="drop-cap">H</span>i there!,</p>
-<p>I had solved <a href="https://portswigger.net/web-security/cross-site-scripting" target="_blank" rel="noopener"><strong>Portswigger Labs</strong></a> and had an basic idea on XSS.<br>
-This time, I wanted to learn advanced way of exploiting  XSS.<br>
-This blog contains the references for the same.</p>
-<h2 id="topic---xss"><a href="#topic---xss" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Topic - XSS</h2>
-<h4 id="labschallenges"><a href="#labschallenges" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Labs/Challenges</h4>
+<p>This is the fourth topic in this series. You can have a look at other topics also for getting a better idea about the series and the pattern.</p>
+<h2 id="fourth-topic---nosql-injection"><a href="#fourth-topic---nosql-injection" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Fourth Topic - NoSql Injection</h2>
+<h3 id="resources"><a href="#resources" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Resources</h3>
 <ul>
-<li>
-<p><a href="https://xss.pwnfunction.com/" target="_blank" rel="noopener">https://xss.pwnfunction.com/</a><br>
-<em><strong>(Nice challenges by <a href="https://twitter.com/@PwnFunction" target="_blank" rel="noopener">@Pwnfuncton</a>)</strong></em></p>
-</li>
-<li>
-<p><a href="https://securitymb.github.io/xss/1/" target="_blank" rel="noopener">https://securitymb.github.io/xss/1/</a><br>
-<em><strong>(Awesome Challenge Series by <a href="https://twitter.com/SecurityMB" target="_blank" rel="noopener">@SecurityMB</a>)</strong></em></p>
-</li>
-<li>
-<p><a href="https://portswigger.net/web-security/dom-based/dom-clobbering/" target="_blank" rel="noopener">https://portswigger.net/web-security/dom-based/dom-clobbering/</a><br>
-<em><strong>(DOM Clobbering Portswigger Labs)</strong></em></p>
-</li>
-<li>
-<p><a href="https://public-firing-range.appspot.com/" target="_blank" rel="noopener">https://public-firing-range.appspot.com/</a><br>
-<em><strong>(Different types of XSS attacks by google specially designed to test out the security scanners)</strong></em></p>
-</li>
-<li>
-<p><a href="http://brutelogic.com.br/chall/minified.php" target="_blank" rel="noopener">http://brutelogic.com.br/chall/minified.php</a><br>
-<em><strong>(Challenge on Double reflection)</strong></em></p>
-</li>
+<li><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.6-Testing_for_NoSQL_Injection" target="_blank" rel="noopener">https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.6-Testing_for_NoSQL_Injection</a><br>
+<em><strong>(Owasp Ref)</strong></em></li>
+<li><a href="https://www.netsparker.com/blog/web-security/what-is-nosql-injection/" target="_blank" rel="noopener">https://www.netsparker.com/blog/web-security/what-is-nosql-injection/</a>
+<em><strong>(NetSparker Blog)</strong></em></li>
+<li><a href="https://geekflare.com/nosql-security-scan/" target="_blank" rel="noopener">https://geekflare.com/nosql-security-scan/</a><br>
+<em><strong>(Various Tools available for finding vulns)</strong></em></li>
+<li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection" target="_blank" rel="noopener">https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection</a><br>
+<em><strong>(Various NoSql Database Payloads)</strong></em></li>
+<li><a href="https://book.hacktricks.xyz/pentesting-web/nosql-injection" target="_blank" rel="noopener">https://book.hacktricks.xyz/pentesting-web/nosql-injection</a><br>
+<em><strong>(Blind NoSqli Ref)</strong></em></li>
+<li><a href="https://docs.mongodb.com/manual/reference/method/" target="_blank" rel="noopener">https://docs.mongodb.com/manual/reference/method/</a><br>
+<em><strong>(Mongodb various Methods)</strong></em></li>
 </ul>
-<h4 id="resources"><a href="#resources" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Resources</h4>
+<h3 id="tools"><a href="#tools" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Tools</h3>
 <ul>
-<li>
-<p><a href="https://brutelogic.com.br/blog/" target="_blank" rel="noopener">https://brutelogic.com.br/blog/</a><br>
-<em><strong>(Awesome collection of blogs by <a href="https://twitter.com/brutelogic" target="_blank" rel="noopener">@brutelogic</a>)</strong></em></p>
-</li>
-<li>
-<p><a href="https://netsec.expert/posts/xss-in-2021/index.html" target="_blank" rel="noopener">https://netsec.expert/posts/xss-in-2021/index.html</a><br>
-<em><strong>(Cheat Sheet by <a href="https://twitter.com/SamuelAnttila" target="_blank" rel="noopener">@SamuelAnttila</a>)</strong></em></p>
-</li>
-<li>
-<p><a href="https://portswigger.net/web-security/cross-site-scripting/cheat-sheet" target="_blank" rel="noopener">https://portswigger.net/web-security/cross-site-scripting/cheat-sheet</a><br>
-<em><strong>(Portswigger Cheat Sheet)</strong></em></p>
-</li>
-<li>
-<p><a href="https://medium.com/@terjanq/dom-clobbering-techniques-8443547ebe94" target="_blank" rel="noopener">https://medium.com/@terjanq/dom-clobbering-techniques-8443547ebe94</a><br>
-<em><strong>(Nice blog on explaining DOM clobbering attacks by <a href="https://twitter.com/terjanq" target="_blank" rel="noopener">@terjanq</a>)</strong></em></p>
-</li>
-<li>
-<p><a href="https://github.com/terjanq/Tiny-XSS-Payloads" target="_blank" rel="noopener">https://github.com/terjanq/Tiny-XSS-Payloads</a><br>
-<em><strong>(Collection of short XSS Payloads)</strong></em></p>
-</li>
-<li>
-<p><a href="https://github.com/s0md3v/AwesomeXSS" target="_blank" rel="noopener">https://github.com/s0md3v/AwesomeXSS</a><br>
-<em><strong>(Payloads and Resources By <a href="https://twitter.com/s0md3v" target="_blank" rel="noopener">@s0md3v</a>)</strong></em></p>
-</li>
-<li>
-<p><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_editor" target="_blank" rel="noopener">https://www.w3schools.com/js/tryit.asp?filename=tryjs_editor</a><br>
-<em><strong>(Online JS editor for playing with the payloads)</strong></em></p>
-</li>
+<li><a href="https://github.com/codingo/NoSQLMap" target="_blank" rel="noopener">https://github.com/codingo/NoSQLMap</a><br>
+<em><strong>(NoSqlMap Scanner)</strong></em></li>
+<li><a href="https://github.com/PortSwigger/nosqli-scanner" target="_blank" rel="noopener">https://github.com/PortSwigger/nosqli-scanner</a><br>
+<em><strong>(Extender in Burpsuite)</strong></em></li>
 </ul>
-<p>Feel free to drop any suggestions via my social handles.<br>
+<h3 id="labs"><a href="#labs" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Labs</h3>
+<ul>
+<li><a href="https://digi.ninja/projects/nosqli_lab.php" target="_blank" rel="noopener">https://digi.ninja/projects/nosqli_lab.php</a><br>
+<em><strong>(Basic NoSqli Lab by Digininja)</strong></em></li>
+<li><a href="https://github.com/p3n7a90n/SimpleNoSqliLab" target="_blank" rel="noopener">https://github.com/p3n7a90n/SimpleNoSqliLab</a><br>
+<em><strong>(Simple NoSqli Lab created by me)</strong></em></li>
+</ul>
+<h3 id="basic-commands-to-query-the-nosql-database"><a href="#basic-commands-to-query-the-nosql-database" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Basic Commands to query the Nosql database</h3>
+<pre><code>show databases       Lists all the databases available.
+use db               To use the given database.
+db                   Output the current database.
+show collections     Lists all the collections/tables available in the current database.
+db.collection.find() Performs a query on a collection or a view and returns a cursor object.
+db.collection.drop() Removes the specified collection from the database.
+</code></pre><p>Feel free to drop any suggestions via my social handles.<br>
 Thanks for reading!!!.</p>
 
             </div>
@@ -259,10 +237,6 @@ Thanks for reading!!!.</p>
             <ul class="related-list">
                 
                     <li class="related-item">
-                        <a href="/blogs/nosqli/" class="related-link">NoSqli</a>
-                    </li>
-                
-                    <li class="related-item">
                         <a href="/blogs/sqli/" class="related-link">Sqli (Advanced Usage of Sqlmap)</a>
                     </li>
                 
@@ -272,6 +246,10 @@ Thanks for reading!!!.</p>
                 
                     <li class="related-item">
                         <a href="/blogs/xxe/" class="related-link">XXE</a>
+                    </li>
+                
+                    <li class="related-item">
+                        <a href="/blogs/advancedxss/" class="related-link">Advanced XSS</a>
                     </li>
                 
                     <li class="related-item">
@@ -303,13 +281,9 @@ Thanks for reading!!!.</p>
     
         <ul class="post-nav">
             
-                <li class="post-nav-prev">
-                    <a href="/blogs/nosqli/" rel="prev">&lt; NoSqli</a>
-                </li>
-            
             
                 <li class="post-nav-next">
-                    <a href="/blogs/sqli/" rel="next">Sqli (Advanced Usage of Sqlmap) &gt;</a>
+                    <a href="/blogs/advancedxss/" rel="next">Advanced XSS &gt;</a>
                 </li>
             
         </ul>
@@ -388,9 +362,9 @@ Thanks for reading!!!.</p>
     function loadComments() {
         if (typeof DISQUS === 'undefined') {
             var disqus_config = function() {
-                this.page.url = 'https:\/\/p3n7a90n.github.com\/blogs\/advancedxss\/';
-                this.page.identifier = '\/blogs\/advancedxss\/';
-                this.page.title = 'Advanced XSS';
+                this.page.url = 'https:\/\/p3n7a90n.github.com\/blogs\/nosqli\/';
+                this.page.identifier = '\/blogs\/nosqli\/';
+                this.page.title = 'NoSqli';
             };
             (function() {
                 var d = document, s = d.createElement('script'); s.async = true;
@@ -402,9 +376,9 @@ Thanks for reading!!!.</p>
             DISQUS.reset({
                 reload: true,
                 config: function() {
-                    this.page.url = 'https:\/\/p3n7a90n.github.com\/blogs\/advancedxss\/';
-                    this.page.identifier = '\/blogs\/advancedxss\/';
-                    this.page.title = 'Advanced XSS';
+                    this.page.url = 'https:\/\/p3n7a90n.github.com\/blogs\/nosqli\/';
+                    this.page.identifier = '\/blogs\/nosqli\/';
+                    this.page.title = 'NoSqli';
                 }
             });
         }
