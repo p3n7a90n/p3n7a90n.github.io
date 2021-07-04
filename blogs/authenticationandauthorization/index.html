@@ -12,7 +12,7 @@
     
     <meta http-equiv="Cache-Control" content="no-siteapp" />
 
-    <title>NoSqli | p3n7a90n</title>
+    <title>Authentication And Authorization | p3n7a90n</title>
 
     <link rel="stylesheet" href="/css/meme.min.82382c86f87cf87b5b53406251018e77569171b25295c38fca025288034c3fce.css"/>
 
@@ -28,9 +28,8 @@
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM&#43;Plex&#43;Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Comfortaa:wght@700&amp;display=swap" /></noscript>
 
     <meta name="author" content="" /><meta name="description" content="Hi there!,
-This is the fourth topic in this series. You can have a look at other topics also for getting a better idea about the series and the pattern.
-Fourth Topic - NoSql Injection Resources  https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.6-Testing_for_NoSQL_Injection
-(Owasp Ref) https://www.netsparker.com/blog/web-security/what-is-nosql-injection/ (NetSparker Blog) https://geekflare." />
+This is the Fifth topic in this series. You can have a look at other topics also for getting a better idea about the series and the pattern.
+Fifth Topic - Authentication and Authorisation As I started exploring these topics in detail, I mostly focused on two widely used standard which is SAML and OAuth 2." />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
@@ -49,7 +48,7 @@ Fourth Topic - NoSql Injection Resources  https://owasp.org/www-project-web-secu
     
 
     
-    <link rel="canonical" href="https://p3n7a90n.github.com/blogs/nosqli/" />
+    <link rel="canonical" href="https://p3n7a90n.github.com/blogs/authenticationandauthorization/" />
     
 
     
@@ -127,7 +126,7 @@ Fourth Topic - NoSql Injection Resources  https://owasp.org/www-project-web-secu
 
         <article class="content post h-entry" data-small-caps="true" data-align="default" data-type="blogs" data-toc-num="true">
 
-            <h1 class="post-title p-name">NoSqli</h1>
+            <h1 class="post-title p-name">Authentication And Authorization</h1>
 
             
 
@@ -141,7 +140,7 @@ Fourth Topic - NoSql Injection Resources  https://owasp.org/www-project-web-secu
 <div class="post-meta">
     
         
-        <time datetime="2021-07-03T09:15:17&#43;05:30" class="post-meta-item published dt-published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2021.7.3</time>
+        <time datetime="2021-07-04T21:45:07&#43;05:30" class="post-meta-item published dt-published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2021.7.4</time>
     
     
     
@@ -167,45 +166,46 @@ Fourth Topic - NoSql Injection Resources  https://owasp.org/www-project-web-secu
 
             <div class="post-body e-content">
               <p style="text-indent:0"><span class="drop-cap">H</span>i there!,</p>
-<p>This is the fourth topic in this series. You can have a look at other topics also for getting a better idea about the series and the pattern.</p>
-<h2 id="fourth-topic---nosql-injection"><a href="#fourth-topic---nosql-injection" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Fourth Topic - NoSql Injection</h2>
+<p>This is the Fifth topic in this series. You can have a look at other topics also for getting a better idea about the series and the pattern.</p>
+<h2 id="fifth-topic---authentication-and-authorisation"><a href="#fifth-topic---authentication-and-authorisation" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Fifth Topic - Authentication and Authorisation</h2>
+<p>As I started exploring these topics in detail, I mostly focused on two widely used standard which is SAML and OAuth 2.0.</p>
+<h2 id="samlsecurity-assertion-markup-language"><a href="#samlsecurity-assertion-markup-language" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>SAML(Security Assertion markup language)</h2>
 <h3 id="resources"><a href="#resources" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Resources</h3>
 <ul>
-<li><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.6-Testing_for_NoSQL_Injection" target="_blank" rel="noopener">https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.6-Testing_for_NoSQL_Injection</a><br>
-<em><strong>(Owasp Ref)</strong></em></li>
-<li><a href="https://www.netsparker.com/blog/web-security/what-is-nosql-injection/" target="_blank" rel="noopener">https://www.netsparker.com/blog/web-security/what-is-nosql-injection/</a>
-<em><strong>(NetSparker Blog)</strong></em></li>
-<li><a href="https://geekflare.com/nosql-security-scan/" target="_blank" rel="noopener">https://geekflare.com/nosql-security-scan/</a><br>
-<em><strong>(Various Tools available for finding vulns)</strong></em></li>
-<li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection" target="_blank" rel="noopener">https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection</a><br>
-<em><strong>(Various NoSql Database Payloads)</strong></em></li>
-<li><a href="https://book.hacktricks.xyz/pentesting-web/nosql-injection" target="_blank" rel="noopener">https://book.hacktricks.xyz/pentesting-web/nosql-injection</a><br>
-<em><strong>(Blind NoSqli Ref)</strong></em></li>
-<li><a href="https://docs.mongodb.com/manual/reference/method/" target="_blank" rel="noopener">https://docs.mongodb.com/manual/reference/method/</a><br>
-<em><strong>(Mongodb various Methods)</strong></em></li>
+<li>
+<p><a href="https://duo.com/blog/the-beer-drinkers-guide-to-saml" target="_blank" rel="noopener">https://duo.com/blog/the-beer-drinkers-guide-to-saml</a><br>
+<em><strong>(Nice blog on explaning SAML)</strong></em></p>
+</li>
+<li>
+<p><a href="https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final91.pdf" target="_blank" rel="noopener">https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final91.pdf</a><br>
+<em><strong>(Awesome Whitepaper on various attacks)</strong></em></p>
+</li>
+<li>
+<p><a href="https://epi052.gitlab.io/notes-to-self/blog/2019-03-07-how-to-test-saml-a-methodology/" target="_blank" rel="noopener">https://epi052.gitlab.io/notes-to-self/blog/2019-03-07-how-to-test-saml-a-methodology/</a><br>
+<em><strong>(Nice blog series on explaining the SAML flow and various attack vector)</strong></em></p>
+</li>
+<li>
+<p><a href="https://docs.oasis-open.org/security/saml/v2.0/saml-profiles-2.0-os.pdf" target="_blank" rel="noopener">https://docs.oasis-open.org/security/saml/v2.0/saml-profiles-2.0-os.pdf</a><br>
+<em><strong>(Doc on different profiles)</strong></em></p>
+</li>
 </ul>
 <h3 id="tools"><a href="#tools" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Tools</h3>
 <ul>
-<li><a href="https://github.com/codingo/NoSQLMap" target="_blank" rel="noopener">https://github.com/codingo/NoSQLMap</a><br>
-<em><strong>(NoSqlMap Scanner)</strong></em></li>
-<li><a href="https://github.com/PortSwigger/nosqli-scanner" target="_blank" rel="noopener">https://github.com/PortSwigger/nosqli-scanner</a><br>
-<em><strong>(Extender in Burpsuite)</strong></em></li>
+<li><a href="https://github.com/PortSwigger/saml-raider" target="_blank" rel="noopener">https://github.com/PortSwigger/saml-raider</a><br>
+<em><strong>(Extender in Burpsuite for SAML attacks)</strong></em></li>
+</ul>
+<h2 id="oauth-20"><a href="#oauth-20" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>OAuth 2.0</h2>
+<h3 id="resources-1"><a href="#resources-1" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Resources</h3>
+<ul>
+<li><a href="https://portswigger.net/web-security/oauth" target="_blank" rel="noopener">https://portswigger.net/web-security/oauth</a><br>
+<em><strong>(Portswigger Ref)</strong></em></li>
 </ul>
 <h3 id="labs"><a href="#labs" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Labs</h3>
 <ul>
-<li><a href="https://digi.ninja/projects/nosqli_lab.php" target="_blank" rel="noopener">https://digi.ninja/projects/nosqli_lab.php</a><br>
-<em><strong>(Basic NoSqli Lab by Digininja)</strong></em></li>
-<li><a href="https://github.com/p3n7a90n/SimpleNoSqliLab" target="_blank" rel="noopener">https://github.com/p3n7a90n/SimpleNoSqliLab</a><br>
-<em><strong>(Simple NoSqli Lab created by me)</strong></em></li>
+<li><a href="https://portswigger.net/web-security/all-labs#oauth-authentication" target="_blank" rel="noopener">https://portswigger.net/web-security/all-labs#oauth-authentication</a>
+<em><strong>(Portswigger Labs)</strong></em></li>
 </ul>
-<h3 id="basic-commands-to-query-the-nosql-database"><a href="#basic-commands-to-query-the-nosql-database" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Basic Commands to query the Nosql database</h3>
-<pre><code>show databases       Lists all the databases available.
-use db               To use the given database.
-db                   Output the current database.
-show collections     Lists all the collections/tables available in the current database.
-db.collection.find() Performs a query on a collection or a view and returns a cursor object.
-db.collection.drop() Removes the specified collection from the database.
-</code></pre><p>Feel free to drop any suggestions via my social handles.<br>
+<p>Feel free to drop any suggestions via my social handles.<br>
 Thanks for reading!!!.</p>
 
             </div>
@@ -237,7 +237,7 @@ Thanks for reading!!!.</p>
             <ul class="related-list">
                 
                     <li class="related-item">
-                        <a href="/blogs/authenticationandauthorization/" class="related-link">Authentication And Authorization</a>
+                        <a href="/blogs/nosqli/" class="related-link">NoSqli</a>
                     </li>
                 
                     <li class="related-item">
@@ -281,13 +281,9 @@ Thanks for reading!!!.</p>
     
         <ul class="post-nav">
             
-                <li class="post-nav-prev">
-                    <a href="/blogs/authenticationandauthorization/" rel="prev">&lt; Authentication And Authorization</a>
-                </li>
-            
             
                 <li class="post-nav-next">
-                    <a href="/blogs/advancedxss/" rel="next">Advanced XSS &gt;</a>
+                    <a href="/blogs/nosqli/" rel="next">NoSqli &gt;</a>
                 </li>
             
         </ul>
@@ -366,9 +362,9 @@ Thanks for reading!!!.</p>
     function loadComments() {
         if (typeof DISQUS === 'undefined') {
             var disqus_config = function() {
-                this.page.url = 'https:\/\/p3n7a90n.github.com\/blogs\/nosqli\/';
-                this.page.identifier = '\/blogs\/nosqli\/';
-                this.page.title = 'NoSqli';
+                this.page.url = 'https:\/\/p3n7a90n.github.com\/blogs\/authenticationandauthorization\/';
+                this.page.identifier = '\/blogs\/authenticationandauthorization\/';
+                this.page.title = 'Authentication And Authorization';
             };
             (function() {
                 var d = document, s = d.createElement('script'); s.async = true;
@@ -380,9 +376,9 @@ Thanks for reading!!!.</p>
             DISQUS.reset({
                 reload: true,
                 config: function() {
-                    this.page.url = 'https:\/\/p3n7a90n.github.com\/blogs\/nosqli\/';
-                    this.page.identifier = '\/blogs\/nosqli\/';
-                    this.page.title = 'NoSqli';
+                    this.page.url = 'https:\/\/p3n7a90n.github.com\/blogs\/authenticationandauthorization\/';
+                    this.page.identifier = '\/blogs\/authenticationandauthorization\/';
+                    this.page.title = 'Authentication And Authorization';
                 }
             });
         }
