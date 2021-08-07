@@ -12,7 +12,7 @@
     
     <meta http-equiv="Cache-Control" content="no-siteapp" />
 
-    <title>Sqli (Advanced Usage of Sqlmap) | p3n7a90n</title>
+    <title>My First Bounty | p3n7a90n</title>
 
     <link rel="stylesheet" href="/css/meme.min.82382c86f87cf87b5b53406251018e77569171b25295c38fca025288034c3fce.css"/>
 
@@ -27,9 +27,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM&#43;Plex&#43;Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Comfortaa:wght@700&amp;display=swap" media="print" onload="this.media='all'" />
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM&#43;Plex&#43;Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Comfortaa:wght@700&amp;display=swap" /></noscript>
 
-    <meta name="author" content="" /><meta name="description" content="Hi there!,
-This is the third topic in this series. You can have a look at other topics also for getting a better idea about the series and the pattern.
-Third Topic - SQL Injection I had already completed the portswigger labs and looked into many challenges of Audi Labs." />
+    <meta name="author" content="" /><meta name="description" content="Hi there!
+I spent some time trying to find out the bugs in the sites which I mostly use like Swiggy, Paytm, and on Bugv platform. I was mostly looking for the vulnerabilities like SQLi, XSS, XXE, SSRF, etc. and couldn’t not able to find a vulnerability that was of high impact or critical." />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
@@ -48,7 +47,7 @@ Third Topic - SQL Injection I had already completed the portswigger labs and loo
     
 
     
-    <link rel="canonical" href="https://p3n7a90n.github.com/blogs/sqli/" />
+    <link rel="canonical" href="https://p3n7a90n.github.com/blogs/businesslogicvulnerabilty/" />
     
 
     
@@ -126,7 +125,7 @@ Third Topic - SQL Injection I had already completed the portswigger labs and loo
 
         <article class="content post h-entry" data-small-caps="true" data-align="default" data-type="blogs" data-toc-num="true">
 
-            <h1 class="post-title p-name">Sqli (Advanced Usage of Sqlmap)</h1>
+            <h1 class="post-title p-name">My First Bounty</h1>
 
             
 
@@ -140,7 +139,7 @@ Third Topic - SQL Injection I had already completed the portswigger labs and loo
 <div class="post-meta">
     
         
-        <time datetime="2021-05-22T21:52:50&#43;05:30" class="post-meta-item published dt-published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2021.5.22</time>
+        <time datetime="2021-08-07T10:12:30&#43;05:30" class="post-meta-item published dt-published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2021.8.7</time>
     
     
     
@@ -149,7 +148,7 @@ Third Topic - SQL Injection I had already completed the portswigger labs and loo
         
         
             
-                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/web-security/" class="category-link p-category">Web Security</a>/<a href="/categories/null-web-study-group/" class="category-link p-category">Null-Web-Study-Group</a></span>
+                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/web-security/" class="category-link p-category">Web Security</a>/<a href="/categories/vulnerabilties-reported/" class="category-link p-category">Vulnerabilties Reported</a></span>
             
         
     
@@ -165,75 +164,34 @@ Third Topic - SQL Injection I had already completed the portswigger labs and loo
             
 
             <div class="post-body e-content">
-              <p style="text-indent:0"><span class="drop-cap">H</span>i there!,</p>
-<p>This is the third topic in this series. You can have a look at other topics also for getting a better idea about the series and the pattern.</p>
-<h2 id="third-topic---sql-injection"><a href="#third-topic---sql-injection" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Third Topic - SQL Injection</h2>
-<p>I had already completed the portswigger labs and looked into many challenges of Audi Labs.<br>
-So this time, I decided to dig a little deeper into the <a href="http://sqlmap.org/" target="_blank" rel="noopener"><strong>Sqlmap</strong></a> tool about its working.
-Before this, I just knew some the basic usage of <a href="http://sqlmap.org/" target="_blank" rel="noopener"><strong>Sqlmap</strong></a>.</p>
-<h4 id="labs"><a href="#labs" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Labs</h4>
+              <p style="text-indent:0"><span class="drop-cap">H</span>i there!</p>
+<p>I spent some time trying to find out the bugs in the sites which I mostly use like Swiggy, Paytm, and on <a href="https://bugv.io/" target="_blank" rel="noopener"><em><strong>Bugv</strong></em></a> platform.
+I was mostly looking for the vulnerabilities like <em><strong>SQLi, XSS, XXE, SSRF</strong></em>, etc.
+and couldn&rsquo;t not able to find a vulnerability that was of high impact or critical.</p>
+<p>One fine day, I thought of giving it a try to android apps and decided to look for <em><strong>Business logic vulnerabilities</strong></em>.</p>
+<p>I borrowed the rooted phone from my friend <a href="https://twitter.com/BaruneshKumar" target="_blank" rel="noopener"><strong>@Barunesh</strong></a> and tried to set up the proxy for intercepting the mobile apps.  
+I followed the steps mentioned below:  </p>
 <ul>
-<li>
-<p><a href="https://portswigger.net/web-security/sql-injection" target="_blank" rel="noopener">https://portswigger.net/web-security/sql-injection</a><br>
-<em><strong>(PortSwigger Labs)</strong></em></p>
-</li>
-<li>
-<p><a href="https://github.com/Audi-1/sqli-labs" target="_blank" rel="noopener">https://github.com/Audi-1/sqli-labs</a><br>
-<em><strong>(Audi Sqli Labs)</strong></em></p>
-</li>
-<li>
-<p><a href="https://github.com/skyblueee/sqli-labs-php7" target="_blank" rel="noopener">https://github.com/skyblueee/sqli-labs-php7</a><br>
-<em><strong>(Audi Sqli Labs with PHP version &gt;=7 compatibility)</strong></em></p>
-</li>
+<li><a href="https://portswigger.net/support/configuring-an-android-device-to-work-with-burp" target="_blank" rel="noopener">https://portswigger.net/support/configuring-an-android-device-to-work-with-burp</a>
+<em><strong>(Portswigger Blog)</strong></em>  </li>
+<li><a href="https://www.youtube.com/watch?v=ENyEcwLaz-A&amp;t=2032s" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ENyEcwLaz-A&amp;t=2032s</a><br>
+<em><strong>(Android SSL Pinning Bypass by Hacktify)</strong></em>  </li>
 </ul>
-<h4 id="advanced-sqlmaphttpsqlmaporg-usage"><a href="#advanced-sqlmaphttpsqlmaporg-usage" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Advanced <a href="http://sqlmap.org/" target="_blank" rel="noopener">Sqlmap</a> Usage</h4>
+<p>After setting up everything on the mobile, I installed some of the apps which I use and decided to give it a go.</p>
+<p>Before that, I have solved the labs from <em><strong>Portswigger Web Security Academy</strong></em> for business logic bugs and read some writeups for the same.</p>
+<p>In one of the app, there was one parameter related to price that was accepting the negative value, and as I am aware of the functionalities of the app. Now it was just a matter to exploit this behavior.</p>
+<p>In a few min, I was able to spend any amount of money in the app without having to actually pay the money from my Bank Accounts.</p>
+<p>The bug was critical. I quickly reported to the team and got my first bounty.</p>
+<p>I have made a checklist which  I refer for testing the business logic vulnerabilities which is majorly based on the excellent White paper by <a href="https://twitter.com/irsdl" target="_blank" rel="noopener"><strong>@irsdl</strong></a> from <em><strong>NCC Group</strong></em>. </p>
+<h3 id="references"><a href="#references" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>References:</h3>
 <ul>
-<li>
-<p><a href="https://github.com/sqlmapproject/sqlmap/wiki/Usage" target="_blank" rel="noopener">https://github.com/sqlmapproject/sqlmap/wiki/Usage</a><br>
-<em><strong>(Options available in Sqlmap)</strong></em></p>
-</li>
-<li>
-<p><a href="https://thegreycorner.com/2017/01/05/exploiting-difficult-sql-injection.html" target="_blank" rel="noopener">https://thegreycorner.com/2017/01/05/exploiting-difficult-sql-injection.html</a><br>
-<em><strong>(Nicely explained advanced Usage of Sqli)</strong></em></p>
-</li>
-<li>
-<p><a href="https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/sqlmap-tricks-for-advanced-sql-injection/" target="_blank" rel="noopener">https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/sqlmap-tricks-for-advanced-sql-injection/</a><br>
-<em><strong>(How to create your own payload)</strong></em></p>
-</li>
-<li>
-<p><a href="https://cobalt.io/blog/a-pentesters-guide-to-sql-injection-sqli" target="_blank" rel="noopener">https://cobalt.io/blog/a-pentesters-guide-to-sql-injection-sqli</a><br>
-<em><strong>(Cheat Sheet on different types of techniques)</strong></em></p>
-</li>
-<li>
-<p><a href="http://www.securityidiots.com/Web-Pentest/SQL-Injection/XPATH-Error-Based-Injection-Extractvalue.html" target="_blank" rel="noopener">http://www.securityidiots.com/Web-Pentest/SQL-Injection/XPATH-Error-Based-Injection-Extractvalue.html</a><br>
-<em><strong>(Explanation on extractvalue function mostly used in Error based payload)</strong></em></p>
-</li>
-<li>
-<p><a href="https://pentest.blog/exploiting-second-order-sqli-flaws-by-using-burp-custom-sqlmap-tamper/" target="_blank" rel="noopener">https://pentest.blog/exploiting-second-order-sqli-flaws-by-using-burp-custom-sqlmap-tamper/</a><br>
-<em><strong>(Ref on detecting second order)</strong></em></p>
-</li>
+<li><a href="https://portswigger.net/web-security/all-labs#business-logic-vulnerabilities" target="_blank" rel="noopener">https://portswigger.net/web-security/all-labs#business-logic-vulnerabilities</a><br>
+<em><strong>(Business Logic Portswigger Labs)</strong></em></li>
+<li><a href="https://www.nccgroup.com/globalassets/our-research/uk/images/common_security_issues_in_financially-orientated_web.pdf.pdf" target="_blank" rel="noopener">https://www.nccgroup.com/globalassets/our-research/uk/images/common_security_issues_in_financially-orientated_web.pdf.pdf</a><br>
+<em><strong>(NCC Group Publication White paper)</strong></em></li>
 </ul>
-<h4 id="parameters-that-i-commonly-use"><a href="#parameters-that-i-commonly-use" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Parameters that I commonly use</h4>
-<pre><code>-u URL, --url=URL   Target URL (e.g. &quot;http://www.site.com/vuln.php?id=1&quot;)
--r REQUESTFILE      Load HTTP request from a file
--p TESTPARAMETER    Testable parameter(s)
--v VERBOSE          Verbosity level: 0-6 (default 1)
---proxy=PROXY       Use a proxy to connect to the target URL
---headers=HEADERS   Extra headers (e.g. &quot;Accept-Language: fr\nETag: 123&quot;)
---technique=TECH..  SQL injection techniques to use (default &quot;BEUSTQ&quot;)
---flush-session     Flush session files for current target
---skip-waf          Skip heuristic detection of WAF/IPS protection
---skip-heuristics   Skip heuristic detection of SQLi/XSS vulnerabilities
---level=LEVEL       Level of tests to perform (1-5, default 1)
---risk=RISK         Risk of tests to perform (1-3, default 1)
---dbms=DBMS         Force back-end DBMS to provided value
---tamper=TAMPER     Use given script(s) for tampering injection data
---prefix=PREFIX     Injection payload prefix string
---suffix=SUFFIX     Injection payload suffix string
---second-url=SEC..  Resulting page URL searched for second-order response
-
-</code></pre><p>Feel free to drop any suggestions via my social handles.<br>
-Thanks for reading!!!.</p>
+<p>Feel free to drop any suggestions in the comments section or via my social handles.<br>
+Thanks for reading !!!.</p>
 
             </div>
 
@@ -272,15 +230,15 @@ Thanks for reading!!!.</p>
                     </li>
                 
                     <li class="related-item">
+                        <a href="/blogs/advancedxss/" class="related-link">Advanced XSS</a>
+                    </li>
+                
+                    <li class="related-item">
+                        <a href="/blogs/sqli/" class="related-link">Sqli (Advanced Usage of Sqlmap)</a>
+                    </li>
+                
+                    <li class="related-item">
                         <a href="/blogs/webcacheattacks/" class="related-link">Web Cache Attacks</a>
-                    </li>
-                
-                    <li class="related-item">
-                        <a href="/blogs/xxe/" class="related-link">XXE</a>
-                    </li>
-                
-                    <li class="related-item">
-                        <a href="/blogs/businesslogicvulnerabilty/" class="related-link">My First Bounty</a>
                     </li>
                 
             </ul>
@@ -308,13 +266,9 @@ Thanks for reading!!!.</p>
     
         <ul class="post-nav">
             
-                <li class="post-nav-prev">
-                    <a href="/blogs/advancedxss/" rel="prev">&lt; Advanced XSS</a>
-                </li>
-            
             
                 <li class="post-nav-next">
-                    <a href="/blogs/webcacheattacks/" rel="next">Web Cache Attacks &gt;</a>
+                    <a href="/blogs/authenticationandauthorization/" rel="next">Authentication And Authorization &gt;</a>
                 </li>
             
         </ul>
@@ -393,9 +347,9 @@ Thanks for reading!!!.</p>
     function loadComments() {
         if (typeof DISQUS === 'undefined') {
             var disqus_config = function() {
-                this.page.url = 'https:\/\/p3n7a90n.github.com\/blogs\/sqli\/';
-                this.page.identifier = '\/blogs\/sqli\/';
-                this.page.title = 'Sqli (Advanced Usage of Sqlmap)';
+                this.page.url = 'https:\/\/p3n7a90n.github.com\/blogs\/businesslogicvulnerabilty\/';
+                this.page.identifier = '\/blogs\/businesslogicvulnerabilty\/';
+                this.page.title = 'My First Bounty';
             };
             (function() {
                 var d = document, s = d.createElement('script'); s.async = true;
@@ -407,9 +361,9 @@ Thanks for reading!!!.</p>
             DISQUS.reset({
                 reload: true,
                 config: function() {
-                    this.page.url = 'https:\/\/p3n7a90n.github.com\/blogs\/sqli\/';
-                    this.page.identifier = '\/blogs\/sqli\/';
-                    this.page.title = 'Sqli (Advanced Usage of Sqlmap)';
+                    this.page.url = 'https:\/\/p3n7a90n.github.com\/blogs\/businesslogicvulnerabilty\/';
+                    this.page.identifier = '\/blogs\/businesslogicvulnerabilty\/';
+                    this.page.title = 'My First Bounty';
                 }
             });
         }
