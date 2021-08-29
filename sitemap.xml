@@ -2,16 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://p3n7a90n.github.com/categories/android/</loc>
+    <lastmod>2021-08-29T15:27:54+05:30</lastmod>
+  </url><url>
     <loc>https://p3n7a90n.github.com/blogs/</loc>
-    <lastmod>2021-08-07T12:14:40+05:30</lastmod>
+    <lastmod>2021-08-29T15:27:54+05:30</lastmod>
   </url><url>
     <loc>https://p3n7a90n.github.com/categories/</loc>
-    <lastmod>2021-08-07T12:14:40+05:30</lastmod>
-  </url><url>
-    <loc>https://p3n7a90n.github.com/blogs/businesslogicvulnerabilty/</loc>
-    <lastmod>2021-08-07T12:14:40+05:30</lastmod>
+    <lastmod>2021-08-29T15:27:54+05:30</lastmod>
   </url><url>
     <loc>https://p3n7a90n.github.com/</loc>
+    <lastmod>2021-08-29T15:27:54+05:30</lastmod>
+  </url><url>
+    <loc>https://p3n7a90n.github.com/blogs/pikashowappreversing/</loc>
+    <lastmod>2021-08-29T15:27:54+05:30</lastmod>
+  </url><url>
+    <loc>https://p3n7a90n.github.com/categories/reverse-engineering/</loc>
+    <lastmod>2021-08-29T15:27:54+05:30</lastmod>
+  </url><url>
+    <loc>https://p3n7a90n.github.com/blogs/businesslogicvulnerabilty/</loc>
     <lastmod>2021-08-07T12:14:40+05:30</lastmod>
   </url><url>
     <loc>https://p3n7a90n.github.com/categories/vulnerabilties-reported/</loc>
