@@ -1,74 +1,120 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>https://p3n7a90n.github.com/blogs/</loc>
     <lastmod>2021-11-17T12:55:29+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/categories/</loc>
     <lastmod>2021-11-17T12:55:29+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/categories/ctf/</loc>
     <lastmod>2021-11-17T12:55:29+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/</loc>
     <lastmod>2021-11-17T12:55:29+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/categories/winja/</loc>
     <lastmod>2021-11-17T12:55:29+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/blogs/winjactfc0c0n-2021/</loc>
     <lastmod>2021-11-17T12:55:29+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/categories/android/</loc>
     <lastmod>2021-08-29T15:31:54+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/blogs/pikashowappreversing/</loc>
     <lastmod>2021-08-29T15:31:54+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/categories/reverse-engineering/</loc>
     <lastmod>2021-08-29T15:31:54+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/blogs/businesslogicvulnerabilty/</loc>
     <lastmod>2021-08-07T12:14:40+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/categories/vulnerabilties-reported/</loc>
     <lastmod>2021-08-07T12:14:40+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/categories/web-security/</loc>
     <lastmod>2021-08-07T12:14:40+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/blogs/authenticationandauthorization/</loc>
     <lastmod>2021-07-04T22:19:20+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/categories/null-web-study-group/</loc>
     <lastmod>2021-07-04T22:19:20+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/blogs/nosqli/</loc>
     <lastmod>2021-07-03T09:51:10+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/blogs/advancedxss/</loc>
     <lastmod>2021-05-23T19:15:28+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/categories/self-learning/</loc>
     <lastmod>2021-05-23T19:15:28+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/blogs/sqli/</loc>
     <lastmod>2021-05-23T14:30:57+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/blogs/webcacheattacks/</loc>
     <lastmod>2021-04-21T14:43:10+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/blogs/xxe/</loc>
     <lastmod>2021-05-23T14:30:23+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/categories/labs/</loc>
     <lastmod>2021-04-20T16:59:52+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/blogs/pentesterlab/</loc>
     <lastmod>2021-04-20T16:59:52+05:30</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://p3n7a90n.github.com/about/</loc>
     <lastmod>2021-04-07T16:59:10+05:30</lastmod>
   </url>
+  
 </urlset>

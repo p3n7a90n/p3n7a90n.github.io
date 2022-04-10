@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on p3n7a90n</title>
+    <link>https://p3n7a90n.github.com/categories/</link>
+    <description>Recent content in Categories on p3n7a90n</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 17 Nov 2021 10:42:17 +0530</lastBuildDate>
+    
+	<atom:link href="https://p3n7a90n.github.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CTF</title>
+      <link>https://p3n7a90n.github.com/categories/ctf/</link>
+      <pubDate>Wed, 17 Nov 2021 10:42:17 +0530</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/ctf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Winja</title>
+      <link>https://p3n7a90n.github.com/categories/winja/</link>
+      <pubDate>Wed, 17 Nov 2021 10:42:17 +0530</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/winja/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>https://p3n7a90n.github.com/categories/android/</link>
+      <pubDate>Sat, 28 Aug 2021 22:50:04 +0530</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reverse Engineering</title>
+      <link>https://p3n7a90n.github.com/categories/reverse-engineering/</link>
+      <pubDate>Sat, 28 Aug 2021 22:50:04 +0530</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/reverse-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vulnerabilties Reported</title>
+      <link>https://p3n7a90n.github.com/categories/vulnerabilties-reported/</link>
+      <pubDate>Sat, 07 Aug 2021 10:12:30 +0530</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/vulnerabilties-reported/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Security</title>
+      <link>https://p3n7a90n.github.com/categories/web-security/</link>
+      <pubDate>Sat, 07 Aug 2021 10:12:30 +0530</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/web-security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Null-Web-Study-Group</title>
+      <link>https://p3n7a90n.github.com/categories/null-web-study-group/</link>
+      <pubDate>Sun, 04 Jul 2021 21:45:07 +0530</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/null-web-study-group/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self Learning</title>
+      <link>https://p3n7a90n.github.com/categories/self-learning/</link>
+      <pubDate>Sat, 22 May 2021 22:36:19 +0530</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/self-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Labs</title>
+      <link>https://p3n7a90n.github.com/categories/labs/</link>
+      <pubDate>Tue, 06 Apr 2021 20:49:22 +0530</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/labs/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
