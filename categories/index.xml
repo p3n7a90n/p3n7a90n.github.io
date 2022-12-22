@@ -6,10 +6,19 @@
     <description>Recent content in Categories on p3n7a90n</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 14 Sep 2022 15:49:43 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 22 Dec 2022 09:46:46 +0530</lastBuildDate>
     
 	<atom:link href="https://p3n7a90n.github.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CVE&#39;s</title>
+      <link>https://p3n7a90n.github.com/categories/cves/</link>
+      <pubDate>Thu, 22 Dec 2022 09:46:46 +0530</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/cves/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CTF</title>
