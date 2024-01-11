@@ -6,24 +6,24 @@
     <description>Recent content in Categories on p3n7a90n</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 Dec 2022 09:46:46 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jan 2024 07:38:02 +0530</lastBuildDate>
     
 	<atom:link href="https://p3n7a90n.github.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>CVE&#39;s</title>
-      <link>https://p3n7a90n.github.com/categories/cves/</link>
-      <pubDate>Thu, 22 Dec 2022 09:46:46 +0530</pubDate>
+      <title>Certs</title>
+      <link>https://p3n7a90n.github.com/categories/certs/</link>
+      <pubDate>Thu, 11 Jan 2024 07:38:02 +0530</pubDate>
       
-      <guid>https://p3n7a90n.github.com/categories/cves/</guid>
+      <guid>https://p3n7a90n.github.com/categories/certs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CTF</title>
       <link>https://p3n7a90n.github.com/categories/ctf/</link>
-      <pubDate>Wed, 14 Sep 2022 15:49:43 +0530</pubDate>
+      <pubDate>Sat, 30 Sep 2023 18:43:43 +0530</pubDate>
       
       <guid>https://p3n7a90n.github.com/categories/ctf/</guid>
       <description></description>
@@ -32,9 +32,18 @@
     <item>
       <title>Winja</title>
       <link>https://p3n7a90n.github.com/categories/winja/</link>
-      <pubDate>Wed, 14 Sep 2022 15:49:43 +0530</pubDate>
+      <pubDate>Sat, 30 Sep 2023 18:43:43 +0530</pubDate>
       
       <guid>https://p3n7a90n.github.com/categories/winja/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CVE&#39;s</title>
+      <link>https://p3n7a90n.github.com/categories/cves/</link>
+      <pubDate>Thu, 22 Dec 2022 09:46:46 +0530</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/cves/</guid>
       <description></description>
     </item>
     
