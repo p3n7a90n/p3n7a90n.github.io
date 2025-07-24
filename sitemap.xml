@@ -4,12 +4,32 @@
   
   <url>
     <loc>https://p3n7a90n.github.com/blogs/</loc>
-    <lastmod>2025-06-29T09:25:10+04:00</lastmod>
+    <lastmod>2025-07-24T09:00:24+04:00</lastmod>
   </url>
   
   <url>
     <loc>https://p3n7a90n.github.com/categories/</loc>
-    <lastmod>2025-06-29T09:25:10+04:00</lastmod>
+    <lastmod>2025-07-24T09:00:24+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://p3n7a90n.github.com/categories/cve-reversing/</loc>
+    <lastmod>2025-07-24T09:00:24+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://p3n7a90n.github.com/categories/gitlab/</loc>
+    <lastmod>2025-07-24T09:00:24+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://p3n7a90n.github.com/</loc>
+    <lastmod>2025-07-24T09:00:24+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://p3n7a90n.github.com/blogs/cve-2023-7028/</loc>
+    <lastmod>2025-07-24T09:00:24+04:00</lastmod>
   </url>
   
   <url>
@@ -19,11 +39,6 @@
   
   <url>
     <loc>https://p3n7a90n.github.com/categories/cves/</loc>
-    <lastmod>2025-06-29T09:25:10+04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://p3n7a90n.github.com/</loc>
     <lastmod>2025-06-29T09:25:10+04:00</lastmod>
   </url>
   

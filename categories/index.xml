@@ -6,10 +6,28 @@
     <description>Recent content in Categories on p3n7a90n</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Jun 2025 22:22:08 +0400</lastBuildDate>
+    <lastBuildDate>Thu, 24 Jul 2025 08:24:10 +0400</lastBuildDate>
     
 	<atom:link href="https://p3n7a90n.github.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CVE Reversing</title>
+      <link>https://p3n7a90n.github.com/categories/cve-reversing/</link>
+      <pubDate>Thu, 24 Jul 2025 08:24:10 +0400</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/cve-reversing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gitlab</title>
+      <link>https://p3n7a90n.github.com/categories/gitlab/</link>
+      <pubDate>Thu, 24 Jul 2025 08:24:10 +0400</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/gitlab/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CVE&#39;s</title>
