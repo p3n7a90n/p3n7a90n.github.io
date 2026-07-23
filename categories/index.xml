@@ -6,10 +6,28 @@
     <description>Recent content in Categories on p3n7a90n</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Jul 2025 08:24:10 +0400</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 10:00:00 +0530</lastBuildDate>
     
 	<atom:link href="https://p3n7a90n.github.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pentesting</title>
+      <link>https://p3n7a90n.github.com/categories/pentesting/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0530</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/pentesting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Security</title>
+      <link>https://p3n7a90n.github.com/categories/web-security/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0530</pubDate>
+      
+      <guid>https://p3n7a90n.github.com/categories/web-security/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CVE Reversing</title>
@@ -98,15 +116,6 @@
       <pubDate>Sat, 07 Aug 2021 10:12:30 +0530</pubDate>
       
       <guid>https://p3n7a90n.github.com/categories/vulnerabilties-reported/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web Security</title>
-      <link>https://p3n7a90n.github.com/categories/web-security/</link>
-      <pubDate>Sat, 07 Aug 2021 10:12:30 +0530</pubDate>
-      
-      <guid>https://p3n7a90n.github.com/categories/web-security/</guid>
       <description></description>
     </item>
     
